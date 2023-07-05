@@ -1,0 +1,115 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    text-decoration: none;
+    list-style: none;
+    
+  
+  }
+  a{
+    color: black;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 70px;
+  
+    
+    
+    
+}
+p{
+    color: black;
+    margin-bottom: 0px;
+    
+}
+
+.menu-esquerdo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+.menu-esquerdo a {
+    
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+
+}
+.menu-esquerdo button {
+    
+    margin-left: 25px;
+    background-color: rgb(65, 127, 243);
+    border-radius: 3px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    
+}
+
+.tabela {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .butao-cadastro{
+    margin-left: 150px;
+    margin-top: 30px;
+    background-color: rgb(65, 127, 243);
+    border-radius: 3px;
+    border: none;
+    width: 280px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+  }
+  .button-novo-adm a{
+    color: white;
+
+  }
+
+  .teste{
+    display: flex;
+    
+  }
+
+  
+  .teste p{
+    margin-left: 25px;
+    
+  }
+
+
+  
+
+  
+  
+
+  
+
+
+  
+
+
+  
+  
+  

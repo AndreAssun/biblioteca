@@ -1,0 +1,84 @@
+começar projeto biblioteca virtual - 
+1 - front end das paginas necessarias 
+2 - Back end com clud de administrados e usuarios
+Administradores fazem cadastros de novos livros
+Usuarios podem relizar compras de livros.**
+
+gratuidade bilhete unico 
+
+mexer no portfólio 
+
+
+
+
+
+anotações 
+
+
+- Quem somos
+- Nosso Acervo 
+- Baixar 
+- Login
+
+
+tela principal
+
+Uma única assinatura oferece acesso a todos os eBooks que você precisa.
+Faça parte da Biblioteca biblioteca acadêmica do Brasil
+
+
+(Acessar biblioteca)
+
+
+(imagem ao lado)
+
+
+-----------------proxima sessão-----------------
+
+
+Seu companheiro ideal para trabalhar, pesquisar e estudar.
+
+Acesse facilmente títulos relevantes e tenha acesso aos principais autores.
+
+
+6 ponto positivos- colocar icons ao lado. 
+
+-Acesso ilimitado a uma variedade de livros digitais.
+-Portabilidade e conveniência para ler em qualquer dispositivo.
+-Sem prazos de devolução ou atrasos.
+-Recomendações personalizadas de leitura.
+-Recursos extras como dicionários e marcadores de página.
+-Economia de espaço e contribuição para a sustentabilidade.
+
+
+--------------------------------------------------
+pensar em uma sessao que mostre o exato numero de 
+-titulos
+-leitores
+---------------------------------------
+
+
+
+
+
+tela de login
+
+campo email, senha
+lembres-se de mim
+ainda nao tenho conta
+sou administrador.
+
+
+
+sou administrador- 
+campos login, senha 
+
+
+
+
+ATENÇÃO ****
+
+
+SE POSSIVEL no header quando passar o mouse, aparecer uma linha abaixo, de acordo com os tons do site (vermelho, azul e amarelo) 
+
+fazer footer preto, com o logo preto e branco.
