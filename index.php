@@ -28,8 +28,6 @@
     </div>
   </header>
 
-  <h2></h2>
-  
   <section class="section-one">
     <div class="intro">
       <h2>Uma única assinatura oferece acesso a todos os eBooks que você precisa.</h2>
@@ -44,7 +42,7 @@
   <section class="section-somos">
 
     <div class="div-card">
-      <a href="#" class="card card01">
+      <a href="#ajudar" class="card card01">
         <div>
             <img src="img/icons8-ideia-128.png" alt="icone-ideia">
             <h3>Incentive a leitura e a comunicação</h3>
@@ -52,7 +50,7 @@
         </div>
       </a>
 
-      <a href="#" class="card card02">
+      <a href="#incentive" class="card card02">
         <div>
           <img src="img/icons8-livro-100.png" alt="icone-livro">
           <h3>Acervo com mais de 4.000 títulos</h3>
@@ -60,7 +58,7 @@
         </div>
       </a>
 
-      <a href="#" class="card card03">
+      <a href="#instituicoes" class="card card03">
         <div>
           <img src="img/icons8-ensino-100.png" alt="icone-ensino">
           <h3>Usado por diversas instituições.</h3>
@@ -71,7 +69,7 @@
     </div>
   </section>
 
-  <section class="section-ajudar">
+  <section class="section-ajudar" id="ajudar">
     <h2>BibliotecaOnline.com</h2>
     <h3>Como a Biblioteca online pode ajudar sua Instituição?</h3>
     <div class="div-conteudo">
@@ -116,45 +114,44 @@
   </section>
   
 
-  <section class="section-incentive">
+  <section class="section-incentive" id="incentive">
     <h2>Acervo com mais de 4 mil livros</h2>
-    <h3>Como a Biblioteca online ajuda a incentivar a leitura?</h3>
+    <h3>Como assinando a  Biblioteca online ajuda a incentivar a leitura?</h3>
     <div class="div-conteudo-incentive">
-      <div class="icons-list">
-        <div  class="icons-side">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-          </svg>
-          <h4>Acesso ilimitado a uma variedade de livros digitais.</h4>
-        </div>
-        <div  class="icons-side">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box2-heart" viewBox="0 0 16 16">
-            <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982Z"/>
-            <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5Zm0 1H7.5v3h-6l2.25-3ZM8.5 4V1h3.75l2.25 3h-6ZM15 5v10H1V5h14Z"/>
-          </svg>
-          <h4>Portabilidade e conveniência para ler em qualquer dispositivo.</h4>
-        </div>
-        <div  class="icons-side">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill-slash" viewBox="0 0 16 16">
-            <path d="M13.879 10.414a2.501 2.501 0 0 0-3.465 3.465l3.465-3.465Zm.707.707-3.465 3.465a2.501 2.501 0 0 0 3.465-3.465Zm-4.56-1.096a3.5 3.5 0 1 1 4.949 4.95 3.5 3.5 0 0 1-4.95-4.95Z"/>
-            <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.493 4.493 0 0 0 12.5 8a4.493 4.493 0 0 0-3.59 1.787A.498.498 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.476 4.476 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1V1Zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
-          </svg>
-          <h4>Sem prazos de devolução ou atrasos.</h4>
-        </div>
-        <div  class="icons-side">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database-add" viewBox="0 0 16 16">
-            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Z"/>
-            <path d="M12.096 6.223A4.92 4.92 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.493 4.493 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.525 4.525 0 0 1-.813-.927C8.5 14.992 8.252 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.552 4.552 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10c.262 0 .52-.008.774-.024a4.525 4.525 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777ZM3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4Z"/>
-          </svg>
-          <h4>Recomendações personalizadas de leitura.</h4>
-        </div>
+      <div class="plataforma">
+        <p>A Biblioteca Online de eBooks pode desempenhar um papel fundamental no incentivo à leitura, proporcionando acesso fácil e conveniente a uma ampla variedade de livros eletrônicos. Com a ascensão da tecnologia digital, as bibliotecas de eBooks tornaram-se plataformas populares para os amantes da leitura</p>
+        
+        <p>Com uma biblioteca de eBooks, os leitores podem carregar uma vasta coleção de livros em um único dispositivo, como um e-reader, tablet ou smartphone. Isso permite que levem seus livros para onde quer que vão, proporcionando mobilidade e conveniência.</p>
+
       </div>
       <div class="image-side">
         <img src="img/carismatica-jovem-atraente-afro-americana-com-corte-de-cabelo-afro-ouvindo-musica-na-cabeca (1).jpg" alt="foto-mulher-lendo">
       </div>
     </div>
     
+    
+    
   </section>
+
+  
+
+
+  <section class="section-instituicoes" id="instituicoes">
+    <h1>Somos uma plataforma usada por diversas instituições educacionais</h1>
+    <div class="instituicoes">
+      <img src="img/instituicoes/1.png" alt="">
+      <img src="img/instituicoes/Logo Azul e Laranja de Faculdade.png" alt="">
+      <img src="img/instituicoes/Logo para Universidade Ensino Superior Minimalista.png" alt="">
+      <img src="img/instituicoes/Logotipo de professor para reforço escolar.png" alt="">
+      <img src="img/instituicoes/logotipo para escola e cursinho de reforço.png" alt="">
+      <img src="img/instituicoes/Logotipo escola municipal minimalista azul e laranja.png" alt="">
+      <img src="img/instituicoes/logotipo para escola e cursinho de reforço.png" alt="">
+
+    </div>
+
+  </section>
+
+
 
   <section class="section-experimente">
     
@@ -169,9 +166,7 @@
       <button>Peça agora</button>
     </div>
 
-  
 
-    
 
   </section>
 
@@ -192,6 +187,10 @@
 
     </section>
   </footer>
+
+
+
+  <script src="app.js"></script>
 
     
 </body>
