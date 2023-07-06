@@ -261,6 +261,7 @@ button a{
  .icons-side h4{
     color:#1a1a1aad;
     font-size: 20px;
+    font-weight: 400;
  }
 
  .icons-list{
@@ -274,6 +275,7 @@ button a{
  /*SECTION- incentive*/
 
  .section-incentive{
+    
     width: 1000px;
     margin: 0 auto;
     padding-top: 100px;
@@ -303,44 +305,14 @@ button a{
     padding-top: 20px;
  }
 
- .image-side img{
+  .div-conteudo-incentive .image-side img{
     max-width: 370px;
     padding-top: 20px;
+    margin-left: 20px;
  }
  
 
- .icons-side-incentive{
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    margin-right: 30px;
- }
- .icons-side-incentive svg{
-    margin-right: 20px;
-    max-width: 50px;
-    color: #0d6efd;
-    
-    
- }
-
- .icons-side-incentive span{
-    color: #0d6efd;
- }
- .icons-incentive{
-    font-size: 60px;
-    width: 70px;
- }
-
-
- .icons-side-incentive h4{
-    color:#1a1a1aad;
-    font-size: 20px;
- }
-
- .div-conteudo-incentive .icons-list{
-    margin-left: 0px;
- }
-
+ 
 
  /*section-instituicoes*/
 
