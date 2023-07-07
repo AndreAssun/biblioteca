@@ -105,6 +105,7 @@ header ul li a:hover {
     font-size: 40px;
     width: 600px;
     padding-bottom: 14px;
+    font-weight: 500;
     
 
 }
@@ -114,6 +115,7 @@ header ul li a:hover {
     width: 530px;
     color: rgb(255, 255, 255);
     padding-top: 17px;
+    font-weight: 400;
 }
 
 .button-side {
@@ -295,8 +297,12 @@ button a{
     line-height: 37px;
     padding-top: 20px;
     width: 600px;
-    
-    
+      
+ }
+ .incentive-text p{
+    color: #1a1a1ad3;
+    padding-top: 20px;
+    font-size: 20px;
     
  }
  .div-conteudo-incentive{
@@ -317,18 +323,19 @@ button a{
  /*section-instituicoes*/
 
  .section-instituicoes{
-
     width: 1000px;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 0px;
     border-top: 1px solid #1a1a1a6e;;
     
     
+ }
     
 
- }
+ 
 
- .section-instituicoes h1{
+ .section-instituicoes h3{
     color:#1a1a1aad;
     font-size: 40px;
     line-height: 37px;
@@ -339,6 +346,7 @@ button a{
 
   .instituicoes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -349,6 +357,8 @@ button a{
  .instituicoes img{
     width: 150px;
  }
+ 
+ 
 
 
 

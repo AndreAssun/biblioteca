@@ -136,8 +136,9 @@
      }
      .section-incentive h2{
         color:#0d6efd;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
+        padding: 10px;
      }
     
      .section-incentive h3{
@@ -148,7 +149,15 @@
         text-align: center;
         width: 100%;
         
+        
      }
+     .incentive-text p{
+      padding: 30px;
+      text-align: center;
+
+
+     }
+
      .div-conteudo{
         display: flex;
         align-items: center;
@@ -158,26 +167,36 @@
      .div-conteudo-incentive img{
         display: none;
      }
-     .plataforma{
-        margin: 0 auto;
-        padding: 30px;
-     }
-
-     .plataforma p{
-        text-align: center;
-        
-     }
+     
 
 
 
-     .section-instituicoes h1{
-        color: #1a1a1aad;
-        font-size: 40px;
-        line-height: 42px;
-        padding-top: 20px;
-        text-align: center;
-        width: 100%;
-     }
+     
+
+     /*section instituicoes*/
+
+     .section-instituicoes{
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 100px;
+      
+   }
+   .section-instituicoes h2{
+      color:#0d6efd;
+      font-size: 20px;
+      text-align: center;
+   }
+  
+   .section-instituicoes h3{
+      color:#1a1a1aad;
+      font-size: 40px;
+      line-height: 42px;
+      padding-top: 20px;
+      text-align: center;
+      width: 100%;
+      
+   }
+   
      
     
      
@@ -220,7 +239,7 @@
 
     .section-ajudar h3{
         color:#1a1a1aad;
-        font-size: 30px;
+        font-size: 23px;
         line-height: 42px;
         padding: 5px;
         text-align: center;
@@ -250,12 +269,30 @@
         
        
      }
+     .incentive-text p {
+      font-size: 15px;
+     }
 
      .plataforma{
         width: 100%;
+        
      }
 
-     /*section-incentive*/
+     .section-incentive h3 {
+      font-size: 23px;
+     }
+
+     .section-instituicoes h3 {
+      font-size: 23px;
+      padding: 10px;
+     }
+
+
+     /*instituicoes*/
+
+     .instituicoes img {
+      width: 100px;
+  }
      
      
 
