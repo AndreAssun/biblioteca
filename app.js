@@ -7,7 +7,7 @@
 
 
 // 1 - Identificar o clique no menu
-const menuItens = document.querySelectorAll ('.menu-nav a[href^="#"]');
+const menuItens = document.querySelectorAll ('.div-card a[href^="#"]');
 
 
 //2 - Verificar o item que foi clicado e fazer referência com o alvo
