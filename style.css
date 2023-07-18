@@ -609,5 +609,60 @@ form{
 }
 
 
+/*acervo*/
+
+#paginate{
+    width: 100%;
+    margin: 32px auto;
+}
+
+
+#paginate .item {
+    border-bottom: 1 px solid black;
+    padding: 16px 32px;
+}
+
+#paginate .pagination {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 20%;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+
+#paginate .pagination div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+
+#paginate .pagination div:not(.numbers),
+#paginate .pagination div.numbers div{
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.active {
+    color: #0d6efd;
+}
+
+ div.numbers div:hover {
+    color: #0d6efd;
+
+}
+
+
+
+
+
+
 
 
