@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="midia.css">
+    <script src="https://kit.fontawesome.com/696ebcb2fd.js" crossorigin="anonymous"></script>
+
+    <title>Biblioteca Online</title>
+</head>
+<body>
+    <header class="header">
+    <div class="menu">
+      <h1>
+        <a href="index.php" >
+            <img id="logo" src="img/logo-site.png" alt=""/>
+        </a>
+      </h1>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="acervo.php">Nosso acervo</a></li>
+          <li><a href="login/login.php">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section-acervo">
+    <div class="intro-acervo">
+      <h2>Nosso acervo</h2>
+      
+    </div>
+    
+  </section>
+
+  <section class="section-experimente-acervo">
+    
+    
+
+    <div class="plataforma">
+      <h1>Experimente nossa plataforma grátuitamente</h1>
+      <p>Você tem a oportunidade de explorar nossa plataforma e descobrir a solução digital que transformará a forma como seus alunos estudam, durante um período de 30 dias.</p>
+      
+    </div>
+
+  </section>
+
+  <section class="acervo-busca">
+    
+        <div class="wrapper">
+            <div id="search-container">
+                <input type="search" name="" id="search-input" placeholder="Procurar livro">
+                <button id="search">Procurar</button>
+            </div>
+            
+            <div id="buttons">
+               <button class="button-value"
+               onclick="filterProduct('todos')">Todos</button>
+               <button class="button-value"
+               onclick="filterProduct('romance')">Romance</button>
+               <button class="button-value"
+               onclick="filterProduct('terror')">Terror</button>
+               <button class="button-value"
+               onclick="filterProduct('historia')">Historia</button>
+               <button class="button-value"
+               onclick="filterProduct('tecnologia')">Tecnologia</button>
+            </div>
+            <div id="livros"></div>
+        </div>
+
+  </section>
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
+    

@@ -1,166 +1,131 @@
-const data = Array.from({ length:100 })
-    .map((_, i) => `Item ${(i + 1)}`)
-//---------------------------------
-
-let  perPage = 5
-const state = {
-    page: 4,
-    perPage,
-    totalPage: Math.ceil(data.length / perPage),
-    maxVisibleButtons: 5
-
-}
-
-const html = {
-    get(element){
-        return document.querySelector(element)
-    }
-}
-
-const controls = {
-    next(){
-        state.page++
-
-        const lastPage = state.page > state.totalPage
-        if(lastPage) {
-            state.page--
-        }
+let livros = {
+    data:[
+    {
+        nomeLivro:"Capão pecado",
+        autor:"Ferrez",
+        categoria:"Romance",
+        preco:"28.50",
+        capa:"img/capas/capaopecado-capa.jpg",
     },
-    prev(){
-        state.page--
-        if(state.page < 1){
-            state.page++
-        }
+
+    {
+        nomeLivro:"Padrões JavaScript",
+        autor:"Jão Almeida",
+        categoria:"Tecnologia",
+        preco:"55.50",
+        capa:"img/capas/padroesjs.jpg",
     },
-    goTo(page){
-        if (page < 1) {
-            page = 1
-        }
+
+    {
+        nomeLivro:"Autobiografia Martin LKJ",
+        autor:"Martin Luther King Jr",
+        categoria:"Historia",
+        preco:"30.00",
+        capa:"img/capas/martinLT-biografia.jpg",
+    },
+
+    {
+        nomeLivro:"A coisa",
+        autor:"Stephen King",
+        categoria:"Terror",
+        preco:"22.50",
+        capa:"./img/capas/a-coisa.jpg",
+    },
+    {
+        nomeLivro:"A coisa",
+        autor:"Stephen King",
+        categoria:"Terror",
+        preco:"22.50",
+        capa:"./img/capas/a-coisa.jpg",
+    },
+
+    {
+        nomeLivro:"Autobiografia Martin LKJ",
+        autor:"Martin Luther King Jr",
+        categoria:"Historia",
+        preco:"30.00",
+        capa:"img/capas/martinLT-biografia.jpg",
+    },
 
     
-        state.page = +page
-        
-        if (page > state.totalPage)
-            state.page = state.totalPage
+ ],
 
-    },
+};
 
-    createListeners() {
-        html.get('.first').addEventListener('click', () => {
-          controls.goTo(1);
-          update();
-        });
-      
-
-        html.get('.last').addEventListener('click', () => {
-        controls.goTo(state.totalPage)
-        update()
-    })
-
-        html.get('.next').addEventListener('click', () => {
-        controls.next()
-        update()
-    })
-
-        html.get('.prev').addEventListener('click', () => {
-        controls.prev()
-        update()
-    })
-
-  }
-}
-
-const list = {
-    create(item){
-        const div = document.createElement('div')
-        div.classList.add('item')
-        div.innerHTML = item
-        
-        html.get('.list').appendChild(div)
-
-    },
-    update(){
-        html.get('.list').innerHTML = ""
-        let page = state.page - 1
-        let start = page * state.perPage
-        let end = start + state.perPage
-
-        const paginatedItems = data.slice(start, end)
-
-        paginatedItems.forEach(list.create)
-
-        
-       
-    }
- 
-}
-
-const buttons = {
-    element: html.get('.pagination .numbers'),
-    create(number){
-        const button = document.createElement('div')
-
-        button.innerHTML = number;
-        
-        if(state.page == number) {
-            button.classList.add('active')
-        }
-
-        button.addEventListener('click', (event) => {
-            const page = event.target.innerText
-
-            controls.goTo(page)
-            update()
-        })
-
-        buttons.element.appendChild(button)
-
-        
-
-    },
-    update(){
-        buttons.element.innerHTML = ""
-        const { maxLeft, maxRight } = buttons.calculateMaxVisible()
-
-        for(let page = maxLeft; page <= maxRight; page++){
-            buttons.create(page)
-
-        }
-    },
-    calculateMaxVisible(){
-        const {maxVisibleButtons} = state
-        let maxLeft = (state.page - Math.floor(maxVisibleButtons / 2))
-        let maxRight = (state.page + Math.floor(maxVisibleButtons / 2))
-
-        if (maxLeft < 1){
-            maxLeft = 1
-            maxRight = maxVisibleButtons
-        }
-
-        if (maxRight > state.totalPage) {
-            maxLeft = state.totalPage - ( maxVisibleButtons - 1 )
-            maxLeft = state.totalPage
-            
-            if(maxLeft < 1) maxLeft = 1
-        }
-        return {maxLeft, maxRight}
-       
-    }
+for (let i of livros.data) {
+    //criando cartao
+    let card = document.createElement("div");
+    //card tem que ter categoria e deve ficar inicialmente escondida
+    card.classList.add("card-livros", i.categoria, "hide");
+    //image div
+    let imgContainer = document.createElement("div");
+    imgContainer.classList.add("capa-container");
+    //img tag
+    let capa = document.createElement("img");
+    capa.setAttribute("src", i.capa);
+    imgContainer.appendChild(capa)
+    card.appendChild(imgContainer);
+    //container
+    let container = document.createElement("div");
+    container.classList.add("container");
+    //nome livro
+    let name = document.createElement("h5");
+    name.classList.add("nome-livro");
+    name.innerText = i.nomeLivro.toUpperCase();
+    container.appendChild(name)
+    //nome livro
+    let autor = document.createElement("h5");
+    autor.classList.add("autor-livro");
+    autor.innerText = i.autor.toUpperCase();
+    container.appendChild(autor)
     
+    
+
+    card.appendChild(container);
+
+    document.getElementById("livros").appendChild(card);
 }
 
-function update(){
-    list.update()
-    buttons.update()
+//parâmetro passado do botão (parâmetro igual à categoria)
+function filterProduct(value){
+    //button de classe
+    let buttons = document.querySelectorAll(".button-value");
+    buttons.forEach((button) => {
+        //check os innerText
+        if(value.toUpperCase() == button.innerText.toUpperCase()){
+            button.classList.add("active");
+        } else{
+            button.classList.remove("active");
+        }
+
+        
+    });
+
+    //select all cards
+    let elements = document.querySelectorAll(".card-livros");
+    //loop through all cards
+    elements.forEach((element) => {
+        //display all cards on "all" button click
+        if (value == "todos") {
+            element.classList.remove("hide");
+        }
+        else{
+            //check if element contains category class
+            if(element.classList.contains(value)){
+               //display baseado na categoria 
+               element.classList.remove("hide");   
+            }  else {
+                //escondendo outros elementos 
+                element.classList.add("hide");
+            }
+        }
+    });
 }
 
-function init() {
-    update()
-    controls.createListeners()
-}
-
-init()
-
+//Mostrar inicialmente todos os produtos
+window.onload = () => {
+    filterProduct("todos");
+};
 
 
 
