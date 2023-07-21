@@ -126,7 +126,3 @@ function filterProduct(value){
 window.onload = () => {
     filterProduct("todos");
 };
-
-
-
-
