@@ -764,7 +764,7 @@ form{
  /*capas*/
  
 
- #livros {
+ #products {
     display: grid;
     grid-template-columns: auto auto auto auto ;
     grid-column-gap: 1.5em;
@@ -826,7 +826,7 @@ form{
         margin-top: 1em;
     }
 
-    #livros{
+    #products{
         grid-template-columns: auto auto auto;
         grid-column-gap: 3em;
     }
