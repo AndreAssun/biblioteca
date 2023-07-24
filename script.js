@@ -17,6 +17,38 @@ let products = {
   
       },
       {
+        productName:"Padrões JavaScript",
+        autor:"Jão Almeida",
+        category: "Tecnologia",
+        price: "49",
+        image: "/img/capas/padroesjs.jpg",
+  
+      },
+      {
+        productName:"Padrões JavaScript",
+        autor:"Jão Almeida",
+        category: "Tecnologia",
+        price: "49",
+        image: "/img/capas/padroesjs.jpg",
+  
+      },
+      {
+        productName:"Padrões JavaScript",
+        autor:"Jão Almeida",
+        category: "Tecnologia",
+        price: "49",
+        image: "/img/capas/padroesjs.jpg",
+  
+      },
+      {
+        productName:"Padrões JavaScript",
+        autor:"Jão Almeida",
+        category: "Tecnologia",
+        price: "49",
+        image: "/img/capas/padroesjs.jpg",
+  
+      },
+      {
         productName:"Autobiografia Martin LKJ",
         autor:"Martin Luther King Jr",
         category: "Historia",
