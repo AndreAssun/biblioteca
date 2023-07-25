@@ -51,28 +51,30 @@
   <section class="acervo-busca">
     
     <div class="wrapper">
-      <div id="search-container">
-        <input
-          type="search"
-          id="search-input"
-          placeholder="Procure por livro"
-        />
-        <button id="search">Search</button>
-      </div>
-      <div id="buttons">
-        <button class="button-value" onclick="filterProduct('todos')">Todos</button>
-        <button class="button-value" onclick="filterProduct('Romance')">
-          Romance
-        </button>
-        <button class="button-value" onclick="filterProduct('Terror')">
-          Terror
-        </button>
-        <button class="button-value" onclick="filterProduct('Historia')">
-          Historia
-        </button>
-        <button class="button-value" onclick="filterProduct('Tecnologia')">
-          Tecnologia
-        </button>
+      <div class="search-color">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Procure por livro"
+          />
+          <button id="search">Procurar</button>
+        </div>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('todos')">Todos</button>
+          <button class="button-value" onclick="filterProduct('Romance')">
+            Romance
+          </button>
+          <button class="button-value" onclick="filterProduct('Terror')">
+            Terror
+          </button>
+          <button class="button-value" onclick="filterProduct('Historia')">
+            Historia
+          </button>
+          <button class="button-value" onclick="filterProduct('Tecnologia')">
+            Tecnologia
+          </button>
+        </div>
       </div>
       <div id="products"></div>
     </div>
