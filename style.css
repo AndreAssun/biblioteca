@@ -772,7 +772,7 @@ form{
     display: grid;
     grid-template-columns: auto auto auto auto ;
     grid-column-gap: 4em;
-    padding: 2em 0;
+    padding-bottom: 100px;
     justify-content: center
  }
  
@@ -826,6 +826,32 @@ form{
     border-bottom: 1px solid black;
     
 }
+
+/* Estilo para o modal */
+
+.info-book-geral{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.info-book-geral h2{
+    font-size: 26px;
+    max-width: 700px;
+    margin-bottom: 10px;
+
+}
+.info-book-geral h3{
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 700px;
+    margin-bottom: 10px;
+
+}
+
+.info-book-01{
+    margin-right: 40px
+}
+
 
 
 

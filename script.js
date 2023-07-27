@@ -4,24 +4,27 @@ let products = {
         productName: "Malcom X",
         autor:"Luiz Carlos Santos",
         category: "Historia",
-        price: "30",
         image: "/img/capas/MALCONX.jpg",
+        pages:544,
+        editora: "Ballantine Books",
+        edicao: "44",
+        idioma:"Portugues",
+        isbn:"0345376714",
   
       },
       
       {
         productName: "Capão pecado",
         autor:"Ferrez",
-        category: "Romance",
-        price: "30",
+        category: "Romance", 
         image: "/img/capas/capaopecado-capa.jpg",
+        pages:455,
   
       },
       {
         productName:"Padrões JavaScript",
         autor:"Jão Almeida",
-        category: "Tecnologia",
-        price: "49",
+        category: "Tecnologia",        
         image: "/img/capas/padroesjs.jpg",
   
       },
@@ -29,7 +32,6 @@ let products = {
         productName:"Introdução á linguagem SQL",
         autor:"Thomas Nield",
         category: "Tecnologia",
-        price: "55",
         image: "/img/capas/sql.jpg",
   
       },
@@ -37,7 +39,6 @@ let products = {
         productName:"Banco de dados",
         autor:"Willian Pereira Alves",
         category: "Tecnologia",
-        price: "49",
         image: "/img/capas/bancodados.jpg",
   
       },
@@ -45,7 +46,6 @@ let products = {
         productName:"Aprendendo Node",
         autor:"Shelley Powers",
         category: "Tecnologia",
-        price: "49",
         image: "/img/capas/node.jpg",
   
       },
@@ -53,7 +53,6 @@ let products = {
         productName:"Introdução á programação Python",
         autor:"Nilo Ney",
         category: "Tecnologia",
-        price: "49",
         image: "/img/capas/phyton.jpg",
   
       },
@@ -61,14 +60,12 @@ let products = {
         productName:"Autobiografia Martin LKJ",
         autor:"Martin Luther King Jr",
         category: "Historia",
-        price: "99",
         image: "/img/capas/martinLT-biografia.jpg",
       },
       {
         productName:"A coisa",
         autor:"Stephen King",
         category:"Terror",
-        price: "29",
         image: "/img/capas/a-coisa.jpg",
   
         
@@ -93,7 +90,6 @@ let products = {
         productName: "A culpa é das estrelas",
         autor:"Harry Jon",
         category: "Romance",
-        price: "30",
         image: "/img/capas/culpadasestrelas.jpg",
   
       },
@@ -101,7 +97,6 @@ let products = {
         productName: "O iluminado",
         autor:"Stephen King",
         category: "Terror",
-        price: "30",
         image: "/img/capas/o-iluminado.jpg",
   
       },
@@ -109,7 +104,6 @@ let products = {
         productName: "The Amityville Horror",
         autor:"Stephen King",
         category: "Terror",
-        price: "30",
         image: "/img/capas/amityville.jpg",
   
       },
@@ -117,7 +111,6 @@ let products = {
         productName: "Cemitério maldito",
         autor:"Stephen King",
         category: "Terror",
-        price: "30",
         image: "/img/capas/cemiterio.jpg",
   
       },
@@ -125,7 +118,6 @@ let products = {
         productName: "Luiz Gama",
         autor:"Luiz Carlos Santos",
         category: "Historia",
-        price: "30",
         image: "/img/capas/luizgama.jpg",
   
       },
@@ -136,13 +128,15 @@ let products = {
  for (let i of products.data) {
     //Create Card
     let card = document.createElement("div");
+
+    card.addEventListener("click", () => showBookSpecs(i));  // Adiciona o evento de clique
     
     //Card should have category and should stay hidden initially
     card.classList.add("card-livros", i.category, "hide");
     
     // Create an anchor element
     let anchor = document.createElement("a");
-    anchor.setAttribute("href", i.link); // Set the href attribute to the link from the data
+    
 
     //image div
     let imgContainer = document.createElement("div");
@@ -158,9 +152,28 @@ let products = {
     container.classList.add("container");
     //product name
     let name = document.createElement("h5");
-    name.classList.add("product-name");
     name.innerText = i.productName;
     container.appendChild(name);
+    //product pages
+    let pages = document.createElement("p");
+    pages.innerText = i.pages;
+    //product editora
+    let editora = document.createElement("p");
+    editora.innerText = i.editora;
+    //product edição
+    let edicao = document.createElement("p");
+    edicao.innerText = i.edicao;
+    //product idioma
+    let idioma = document.createElement("p");
+    idioma.innerText = i.idioma;
+    //product ISBN
+    let isbn = document.createElement("p");
+    isbn.innerText = i.isbn;
+    
+    
+    
+
+
 
     //autor name
     let autor = document.createElement("h3");
@@ -209,6 +222,38 @@ let products = {
       }
     });
   }
+
+  
+  // Função para exibir as especificações do livro selecionado
+  function showBookSpecs(book) {
+    // Cria um objeto com as informações do livro selecionado
+    const bookSpecs = {
+        productName: book.productName,
+        autor: book.autor,
+        category: book.category,
+        image: book.image,
+        pages: book.pages,
+        editora: book.editora,
+        edicao: book.edicao,
+        idioma: book.idioma,
+        isbn: book.isbn,
+    };
+
+    // Converte o objeto para uma string JSON
+    const bookSpecsJSON = JSON.stringify(bookSpecs);
+
+    // Armazena a string JSON no localStorage
+    localStorage.setItem("bookSpecs", bookSpecsJSON);
+
+   
+
+    // Redireciona o usuário para a página de especificações do livro
+    window.location.href = "book_specs.html";
+}
+  
+
+
+
   
   // Search button click
 document.getElementById("search").addEventListener("click", () => {
@@ -229,6 +274,7 @@ document.getElementById("search").addEventListener("click", () => {
     }
   });
 });
+
   
  
 //Mostrar inicialmente todos os produtos
