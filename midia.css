@@ -254,6 +254,33 @@
 
 }
 
+@media screen and (max-width: 1024px){
+
+    
+   .wrapper{
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 90px;
+   }
+      .capa-container img{
+          max-width: 10em;
+          object-fit: contain;
+          height: 10em;
+      }
+  
+      .card-livros {
+          max-width: 10em;
+          margin-top: 1em;
+      }
+  
+      #products{
+          grid-template-columns: auto auto auto;
+          grid-column-gap: 3em;
+      }
+      
+  }
+  
+
 
 
 @media screen and (max-width: 520px){
@@ -360,3 +387,4 @@
     
 }
 }
+
