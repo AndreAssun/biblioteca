@@ -2,6 +2,7 @@
 
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
 
 * {
@@ -829,10 +830,19 @@ form{
 
 /* Estilo para o modal */
 
+
+
+#book-specs-content{
+    width: 70%;
+    margin:  0 auto;
+    padding-top: 30px;
+}
+
 .info-book-geral{
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    align-items: center;
 }
 .info-book-geral h2{
     font-size: 26px;
@@ -845,40 +855,25 @@ form{
     font-weight: 500;
     max-width: 700px;
     margin-bottom: 10px;
-
 }
+
+.info-book-geral p{
+    margin-bottom: 7px;
+}
+
+
+
 
 .info-book-01{
     margin-right: 40px
+
+}
+.info-book-01 img{
+    width: 250px;
 }
 
+.books-resume{
 
-
-
-@media screen and (max-width: 1024px){
-
-    
- .wrapper{
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 90px;
- }
-    .capa-container img{
-        max-width: 10em;
-        object-fit: contain;
-        height: 10em;
-    }
-
-    .card-livros {
-        max-width: 10em;
-        margin-top: 1em;
-    }
-
-    #products{
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 3em;
-    }
-    
 }
 
 
