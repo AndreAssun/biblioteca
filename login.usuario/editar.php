@@ -20,7 +20,7 @@
 <body>
 <?php 
         $query ="SELECT nome, email FROM usuarios WHERE id_usuarios = $id";
-       // $usuario = mysqli_query($mysql, $query);
+       // $usuario = mysqli_query($mysql, $query).;
        // $dados_usuario = mysqli_fetch_all($usuario, MYSQLI_ASSOC);
 
         
