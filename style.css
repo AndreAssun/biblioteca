@@ -878,6 +878,7 @@ footer{
     width: 100%;
     background-color: #063655;
     margin-top: 100px;
+    padding-bottom: 80px;
 
 }
 
@@ -921,17 +922,14 @@ footer{
 
 .footer-social{
     display: flex;
-}
-
-.footer-social{
     margin-right: 8%;
-    
 }
+v
 
-.footer-social h3{
-    display: flex;
+
+.footer-social h4{
     font-weight: 100;
-    
+    margin-left: 40px;
 }
 
 .icons-footer{
@@ -945,7 +943,7 @@ footer{
     display: flex;
     justify-content: space-around;
     color: white;
-    width: 1000px;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 50px;
     
@@ -955,7 +953,35 @@ footer{
 
 .icons-footer svg{
     
-    margin-left: 2px;
+    margin-left: 15px;
+}
+
+.footer-section-03{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 77%;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+
+}
+
+.footer-social h4{
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+.footer-social h3{
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+
+.footer-section-03 h3{
+    font-weight: 100;
+    margin-left: 20px;
 }
 
 
