@@ -467,11 +467,11 @@ button a{
 /*SECTION FOOTER*/
 
 
-.section-main-footer{
+.signature-footer{
     width: 100%;
     background-color:#3c5bd8d2 ;
     height: 70px;
-    margin-top: 50px;
+    
     
    }
   
@@ -506,12 +506,7 @@ button a{
     
     
    }
-   /*.div-form-infos p{
-      
-    font-size: 12px;
-   
- }
- */
+  
 
    .section-pedido h2{
     color:#0d6efd;
@@ -828,7 +823,7 @@ form{
     
 }
 
-/* Estilo para o modal */
+/* Estilo para o modal livro */
 
 
 
@@ -872,11 +867,96 @@ form{
     width: 250px;
 }
 
+
 .books-resume{
 
 }
 
+/*FOOTER*/
 
+footer{
+    width: 100%;
+    background-color: #063655;
+    margin-top: 100px;
+
+}
+
+.footer-section-01{
+    
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    display: flex;
+    color: white;
+    padding-right: 3%; /*a logo do footer tem uma margem, colocando esse padding na direita para ficar igualmente no centro.*/
+    
+}
+
+.footer-geral{
+    display: flex;
+}
+
+.footer-info{
+    padding-left: 70px;
+}
+
+.footer-info span{
+    color: rgb(176, 176, 247);
+}
+
+.footer-section-01 img{
+    width: 250px;
+    
+    
+}
+
+.footer-info ul a {
+    color: white;
+}
+
+.footer-info ul li{
+    padding-bottom: 20px;
+}
+
+.footer-social{
+    display: flex;
+}
+
+.footer-social{
+    margin-right: 8%;
+    
+}
+
+.footer-social h3{
+    display: flex;
+    font-weight: 100;
+    
+}
+
+.icons-footer{
+    margin-left: 20px;
+}
+
+
+.footer-section-02 {
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    
+    border-bottom: 1px solid #efefef6e;
+}
+
+
+.icons-footer svg{
+    
+    margin-left: 2px;
+}
 
 
 

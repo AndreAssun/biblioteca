@@ -202,107 +202,101 @@ let products = {
     ],
   };
   
- for (let i of products.data) {
-    //Create Card
+  for (let i of products.data) {
+    // Criação do card
     let card = document.createElement("div");
 
-    card.addEventListener("click", () => showBookSpecs(i));  // Adiciona o evento de clique
-    
-    //Card should have category and should stay hidden initially
-    card.classList.add("card-livros", i.category, "hide");
-    
-    // Create an anchor element
-    let anchor = document.createElement("a");
-    
+    card.addEventListener("click", () => showBookSpecs(i)); // Adiciona o evento de clique
 
-    //image div
+    // O card deve ter a categoria e ficar oculto inicialmente
+    card.classList.add("card-livros", i.category, "hide");
+
+    // Criação de um elemento de âncora
+    let anchor = document.createElement("a");
+
+    // Div da imagem
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("capa-container");
-    //img tag
+    // Tag de imagem
     let image = document.createElement("img");
     image.setAttribute("src", i.image);
     imgContainer.appendChild(image);
     anchor.appendChild(imgContainer);
 
-    //container
+    // Container
     let container = document.createElement("div");
     container.classList.add("container");
-    //product name
+    // Nome do produto
     let name = document.createElement("h5");
+    name.classList.add("productName"); // Adiciona a classe productName
     name.innerText = i.productName;
     container.appendChild(name);
-    //product pages
+    // Páginas do produto
     let pages = document.createElement("p");
     pages.innerText = i.pages;
-    //product editora
+    // Editora do produto
     let editora = document.createElement("p");
     editora.innerText = i.editora;
-    //product edição
+    // Edição do produto
     let edicao = document.createElement("p");
     edicao.innerText = i.edicao;
-    //product idioma
+    // Idioma do produto
     let idioma = document.createElement("p");
     idioma.innerText = i.idioma;
-    //product ISBN
+    // ISBN do produto
     let isbn = document.createElement("p");
     isbn.innerText = i.isbn;
-    
-    
-    
 
-
-
-    //autor name
+    // Nome do autor
     let autor = document.createElement("h3");
     autor.classList.add("autor");
     autor.innerText = i.autor;
     container.appendChild(autor);
-    
-    // Append the container to the anchor instead of the card
+
+    // Anexa o container à âncora em vez do card
     anchor.appendChild(container);
-    
-    // Append the anchor to the card
+
+    // Anexa a âncora ao card
     card.appendChild(anchor);
-    
+
     document.getElementById("products").appendChild(card);
 }
-  
-  //parameter passed from button (Parameter same as category)
-  function filterProduct(value) {
-    //Button class code
+
+// Função para filtrar produtos com base na categoria
+function filterProduct(value) {
+    // Código dos botões
     let buttons = document.querySelectorAll(".button-value");
     buttons.forEach((button) => {
-      //check if value equals innerText
-      if (value.toUpperCase() == button.innerText.toUpperCase()) {
-        button.classList.add("active");
-      } else {
-        button.classList.remove("active");
-      }
-    });
-  
-    //select all cards
-    let elements = document.querySelectorAll(".card-livros");
-    //loop through all cards
-    elements.forEach((element) => {
-      //display all cards on 'all' button click
-      if (value == "todos") {
-        element.classList.remove("hide");
-      } else {
-        //Check if element contains category class
-        if (element.classList.contains(value)) {
-          //display element based on category
-          element.classList.remove("hide");
+        // Verifica se o valor é igual ao texto do botão (ignorando maiúsculas e minúsculas)
+        if (value.toUpperCase() === button.innerText.toUpperCase()) {
+            button.classList.add("active");
         } else {
-          //hide other elements
-          element.classList.add("hide");
+            button.classList.remove("active");
         }
-      }
     });
-  }
 
-  
-  // Função para exibir as especificações do livro selecionado
-  function showBookSpecs(book) {
+    // Seleciona todos os cards
+    let elements = document.querySelectorAll(".card-livros");
+    // Loop por todos os cards
+    elements.forEach((element) => {
+        // Exibe todos os cards ao clicar no botão "todos"
+        if (value === "todos") {
+            element.classList.remove("hide");
+        } else {
+            // Verifica se o elemento contém a classe da categoria
+            if (element.classList.contains(value)) {
+                // Exibe o elemento com base na categoria
+                element.classList.remove("hide");
+            } else {
+                // Oculta outros elementos
+                element.classList.add("hide");
+            }
+        }
+    });
+}
+
+// Função para exibir as especificações do livro selecionado
+function showBookSpecs(book) {
     // Cria um objeto com as informações do livro selecionado
     const bookSpecs = {
         productName: book.productName,
@@ -316,45 +310,51 @@ let products = {
         isbn: book.isbn,
     };
 
-    // Converte o objeto para uma string JSON
+    // Converte o objeto em uma string JSON
     const bookSpecsJSON = JSON.stringify(bookSpecs);
 
     // Armazena a string JSON no localStorage
     localStorage.setItem("bookSpecs", bookSpecsJSON);
 
-   
-
     // Redireciona o usuário para a página de especificações do livro
     window.location.href = "book_specs.html";
 }
-  
 
+function removeSpecialCharacters(text) {
+  return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
 
-
-  
-  // Search button click
+// Adiciona um ouvinte de evento ao botão de pesquisa
 document.getElementById("search").addEventListener("click", () => {
-  // Initialization
+  // Obtém o valor do campo de entrada de pesquisa e converte para letras minúsculas
   let searchInput = document.getElementById("search-input").value.toLowerCase();
-  let elements = document.querySelectorAll(".product-name");
+  
+  // Remove acentos e caracteres especiais do valor de pesquisa
+  let cleanedSearchInput = removeSpecialCharacters(searchInput); // Remove acentos e caracteres especiais
+  
+  // Seleciona todos os elementos com a classe "productName"
+  let elements = document.querySelectorAll(".productName");
+  
+  // Seleciona todos os cards de livros
   let cards = document.querySelectorAll(".card-livros");
 
-  // Loop through all elements
+  // Percorre todos os elementos (títulos de livros)
   elements.forEach((element, index) => {
-    // Check if text includes the search value (case-insensitive and partial match)
-    if (element.innerText.toLowerCase().includes(searchInput)) {
-      // Display matching card
-      cards[index].classList.remove("hide");
-    } else {
-      // Hide others
-      cards[index].classList.add("hide");
-    }
+      // Remove acentos e caracteres especiais do texto do elemento
+      let elementText = removeSpecialCharacters(element.innerText.toLowerCase()); // Remove acentos e caracteres especiais
+      
+      // Verifica se o texto do elemento inclui o valor de pesquisa tratado
+      if (elementText.includes(cleanedSearchInput)) {
+          // Remove a classe "hide" para mostrar o card de livro
+          cards[index].classList.remove("hide");
+      } else {
+          // Adiciona a classe "hide" para esconder o card de livro
+          cards[index].classList.add("hide");
+      }
   });
 });
 
-  
- 
-//Mostrar inicialmente todos os produtos
+// Mostrar inicialmente todos os produtos
 window.onload = () => {
     filterProduct("todos");
 };
