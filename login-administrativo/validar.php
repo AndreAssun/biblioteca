@@ -28,7 +28,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['email_login'] = $usuario['email'];
             $_SESSION['nome_login'] = $usuario['nome'];
 
-// echo $_SESSION['nome_login'];
+/// echo $_SESSION['nome_login'];
             header("Location: painel.php");
 
         }else{
