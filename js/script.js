@@ -202,17 +202,19 @@ let products = {
     ],
   };
   
-  for (let i of products.data) {
-    // Criação do card
-    let card = document.createElement("div");
-
-    card.addEventListener("click", () => showBookSpecs(i)); // Adiciona o evento de clique
+  // Dentro do loop de criação de cards
+for (let i of products.data) {
+  // Criar Card
+  let card = document.createElement("div");
+  card.addEventListener("click", () => showBookSpecs(i)); // Adiciona o evento de clique
 
     // O card deve ter a categoria e ficar oculto inicialmente
     card.classList.add("card-livros", i.category, "hide");
 
-    // Criação de um elemento de âncora
-    let anchor = document.createElement("a");
+   // Criar um link âncora
+   let anchor = document.createElement("a");
+   anchor.href = "javascript:void(0)"; // Use javascript:void(0) para que o link não altere a URL
+   
 
     // Div da imagem
     let imgContainer = document.createElement("div");

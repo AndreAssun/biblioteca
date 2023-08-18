@@ -761,6 +761,11 @@ form{
 
  }
 
+
+ .card-livros:hover {
+    cursor: pointer;
+  }
+
  /*capas*/
  
 
