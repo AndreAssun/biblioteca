@@ -57,6 +57,9 @@ header ul {
     display: flex;
 
 }
+.menu-nav ul{
+    margin-bottom: 0px;
+}
 
 header ul li {
     margin-left: 20px;
@@ -418,14 +421,18 @@ button a{
 
  }
 
- .plataforma{
-    max-width: 600px;
+ .plataforma {
+        max-width: 600px;
+        text-align: center;
+        padding-top: 60px;
+        margin: 0 auto;
  }
 
 
  .gratis{
     padding-bottom: 30px;
     padding-top: 50px;
+    text-align: center;
  }
 
 /*acervo*/
@@ -439,12 +446,6 @@ button a{
     padding-top: 100px;
     padding-left: 150px;
     width: 100%;
-    
-    
-    
-    
-    
-    
 }
 
 .intro h2{
@@ -676,8 +677,11 @@ form{
     background: #f6f7fb;
     
     
-   
 }
+#products a{
+    text-decoration: none;
+}
+
     
 .section-experimente-acervo{
     display: flex;
@@ -764,6 +768,12 @@ form{
 
  .card-livros:hover {
     cursor: pointer;
+  }
+
+  .paginacao{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
   }
 
  /*capas*/
