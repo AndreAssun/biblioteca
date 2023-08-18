@@ -83,7 +83,7 @@ header ul li a:hover {
 
 
 .section-one {
-    background-image: url("img/sessao-one.png");
+    background-image: url("/img/sessao-one.png");
     background-size: cover ;
     height: 500px;
     /* background: rgb(16,10,106);
@@ -663,7 +663,7 @@ form{
     align-items: center;
     justify-content: center;
     color: rgb(250, 250, 250);
-    background-image: url(img/feche-o-retrato-de-uma-jovem-atraente-isolada.png);
+    background-image: url(/img/feche-o-retrato-de-uma-jovem-atraente-isolada.png);
     background-size: cover ;
     height: 290px;
     
