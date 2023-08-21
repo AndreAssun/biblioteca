@@ -202,7 +202,7 @@ let products = {
     ],
   };
   
-  // Dentro do loop de criação de cards
+// Dentro do loop de criação de cards
 for (let i of products.data) {
   // Criar Card
   let card = document.createElement("div");
