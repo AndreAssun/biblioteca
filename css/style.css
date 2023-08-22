@@ -668,6 +668,9 @@ form{
     height: 290px;
     
 }
+.section-experimente{
+    padding-bottom: 80px;
+}
 
 .intro-acervo h2{
     font-size: 30px;
@@ -838,7 +841,7 @@ form{
     
 }
 
-/* Estilo para o modal livro */
+/* Estilo para especificações do livro */
 
 
 
@@ -846,12 +849,23 @@ form{
     width: 70%;
     margin:  0 auto;
     padding-top: 30px;
+    
+}
+#book-specs-content a {
+    text-transform: uppercase;
+    color: rgb(52, 52, 52);
+    font-weight: 500;
+  
+}
+#book-specs-content a:hover {
+    color: #0d6efd;
 }
 
 .info-book-geral{
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    margin-bottom: 60px;
     align-items: center;
 }
 .info-book-geral h2{
@@ -871,9 +885,6 @@ form{
     margin-bottom: 7px;
 }
 
-
-
-
 .info-book-01{
     margin-right: 40px
 
@@ -883,8 +894,51 @@ form{
 }
 
 
-.books-resume{
+.books-sinopse{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #1a1a1a6e;
+    
+}
 
+.books-sinopse h2{
+    font-size: 20px;
+    color:#1a1a1acc;
+    padding-bottom: 20px;
+}
+
+.books-coment{
+    background-color: #5897FB;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.coments-content{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    
+}
+
+.coments-content h1{
+    font-weight: 500;
+    font-size: 26px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.box-coment{
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(38, 38, 38);
+    
+    
+}
+
+.coment{
+   padding: 30px;
+   text-align: center;
 }
 
 /*FOOTER*/
@@ -892,7 +946,6 @@ form{
 footer{
     width: 100%;
     background-color: #063655;
-    margin-top: 100px;
     padding-bottom: 80px;
 
 }

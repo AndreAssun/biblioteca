@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="midia.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/midia.css">
         <script src="https://kit.fontawesome.com/696ebcb2fd.js" crossorigin="anonymous"></script>
     
         <title>Biblioteca Online</title>
@@ -47,20 +47,43 @@
                      <img src="${bookSpecs.image}" alt="${bookSpecs.productName}">
                 </div>
                 <div class="books">
-                    <h2>${bookSpecs.productName}</h2>
+                    <h2 >${bookSpecs.productName}</h2>
                     <h3>${bookSpecs.autor}</h3>
-                    <p>${bookSpecs.category}</p>
-                    <p><strong>Páginas:</strong>  ${bookSpecs.pages}</p>
-                    <p><strong>Editora:</strong>  ${bookSpecs.editora}</p>
-                    <p><strong>Edição:</strong>  ${bookSpecs.edicao}</p>
-                    <p><strong>Idioma:</strong>  ${bookSpecs.idioma}</p>
-                    <p><strong>ISBN:</strong>  ${bookSpecs.isbn}</p>
+                    <p> ${bookSpecs.category}</p>
+                    <p><strong>Páginas:</strong> ${bookSpecs.pages}</p>
+                    <p><strong>Editora:</strong> ${bookSpecs.editora}</p>
+                    <p><strong>Edição:</strong> ${bookSpecs.edicao}</p>
+                    <p><strong>Idioma:</strong> ${bookSpecs.idioma}</p>
+                    <p><strong>ISBN:</strong> ${bookSpecs.isbn}</p>
                 </div>
+            </div>
+
+            <div>
+              <div class="books-sinopse">
+                    <h2>Sinopse</h2>
+                    <p>Lhere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                    
+              </div>
             </div>
                 
             
         `;
     </script>
+
+    <div class="books-coment">
+      <div class="coments-content">
+          <div>
+            <h1>Comentários mais recentes sobre este livro</h1>
+          </div>
+          <div class="box-coment">
+            <div class="coment">
+              <img src="img/icons8-comentários-100.png" alt="icone-comentario">
+              <p>Esse livro ainda não possui comentários, seja o primero !</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <footer>
 
