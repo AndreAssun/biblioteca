@@ -858,7 +858,7 @@ form{
   
 }
 #book-specs-content a:hover {
-    color: #0d6efd;
+    color: #579aff .4s;
 }
 
 .info-book-geral{
@@ -955,7 +955,7 @@ footer{
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 70%;
     display: flex;
     color: white;
     padding-right: 3%; /*a logo do footer tem uma margem, colocando esse padding na direita para ficar igualmente no centro.*/
@@ -964,10 +964,12 @@ footer{
 
 .footer-geral{
     display: flex;
+    
 }
 
 .footer-info{
-    padding-left: 70px;
+    padding-left: 10px;
+    
 }
 
 .footer-info span{
@@ -983,17 +985,23 @@ footer{
 .footer-info ul a {
     color: white;
     text-decoration: none;
+    
 }
 
 .footer-info ul li{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    
+}
+
+.footer-info ul li:hover{
+    color: rgb(176, 176, 247);
 }
 
 .footer-social{
     display: flex;
     margin-right: 8%;
 }
-v
+
 
 
 .footer-social h4{
@@ -1007,15 +1015,13 @@ v
 
 
 .footer-section-02 {
-    
     align-items: center;
     display: flex;
     justify-content: space-around;
     color: white;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     padding-bottom: 50px;
-    
     border-bottom: 1px solid #efefef6e;
 }
 
@@ -1040,7 +1046,7 @@ v
 .footer-social h4{
     font-weight: 100;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
@@ -1048,6 +1054,8 @@ v
     font-weight: 100;
     margin-left: 20px;
     font-size: 20px;
+    color: rgb(176, 176, 247);
+    
 }
 
 
