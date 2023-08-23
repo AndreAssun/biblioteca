@@ -424,7 +424,7 @@ button a{
  .plataforma {
         max-width: 600px;
         text-align: center;
-        padding-top: 60px;
+        
         margin: 0 auto;
  }
 
@@ -688,9 +688,8 @@ form{
     
 .section-experimente-acervo{
     display: flex;
-    width: 1000px;
     margin: 0 auto;
-    padding: 60px 0px;
+    padding: 60px 0px 60px 0px;
     flex-direction: column;
     
      
