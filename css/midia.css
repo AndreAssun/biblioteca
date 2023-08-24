@@ -353,7 +353,11 @@
       margin-left: 20px;
       font-size: 20px;
   }
+
+  .search-color {
+   margin: 15px 15px 0px 15px;
    
+}
 }
 
 @media screen and (max-width: 690px){
@@ -379,7 +383,7 @@
    width: 70%;
    display: flex;
    color: white;
-   padding-right: 25px;
+   padding-right: 5px;
 }
 
   .footer-social h3 {
@@ -406,6 +410,36 @@
    border-bottom: 1px solid #efefef6e;
    flex-direction: column;
 }
+
+
+#products {
+   grid-template-columns: auto auto  ;
+   grid-column-gap: 3em;
+   
+   
+}
+
+/*especificações*/
+
+.info-book-geral {
+   flex-direction: column;
+   
+}
+
+.info-book-01{
+   padding-bottom: 30px;
+   margin: 0 auto;
+}
+
+.info-book-01 img{
+   width: 200px;
+}
+
+#books{
+   background-color: blue;
+}
+
+
   
 }
     
@@ -427,6 +461,7 @@
   .div-form-infos label{
    font-size: 15px;
   }
+  
 
 
 }
@@ -446,7 +481,7 @@
       }
   
       .card-livros {
-          max-width: 10em;
+          width: 10em;
           margin-top: 1em;
       }
   
@@ -550,18 +585,93 @@
 
      .instituicoes img {
       width: 100px;
+   }
+   /*vitrine*/
+
+   #products{
+      grid-template-columns: auto;
+      grid-column-gap: 3em;
   }
   /**/
   .div-form-infos form {
    width: 100%;
    margin: 0 auto;
    display: flex;
-   flex-direction: column;
-     
-     
-
-     
-    
+   flex-direction: column;  
 }
+.search-color {
+   display: flex;
+   flex-direction: column;
+   
+}
+#buttons{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   
+}
+
+#buttons button{
+   margin-bottom: 5px;
+   width: 100%;
+   
+}
+#search-container{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   
+}
+
+#search-container input {
+   width: 90%;
+   margin: 0 auto;
+}
+
+#search-container #search {
+  
+   width: 90%;
+   margin:0 auto;
+}
+
+ .card-livros {
+   background-color: #ffffff;
+   width: 80%;
+   margin: 0 auto;
+   height: 1400px;
+   margin-top: 53px;
+   padding: 1em;
+   border-radius: 5px;
+   box-shadow: 1em 2em 2.5em rgba(0, 0, 0, 0.082);
+   text-align: center;
+   
+}
+
+.books-sinopse p{
+   font-size: 14px;
+}
+
+.capa-container{
+   text-align: center;
+}
+
+.capa-container img{
+   max-width: 100%;
+   object-fit: contain ;
+   height: 200px;
+   
+}
+
+.coments-content h1{
+   font-size: 20px;
+   text-align: center;
+}
+
+.coment p{
+   font-size: 14px;
+}
+
+
 }
 

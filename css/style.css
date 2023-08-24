@@ -376,7 +376,7 @@ button a{
     display: flex;
     width: 1000px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 20px;   
     flex-direction: column;
     border-top: 1px solid #1a1a1a6e;;
      
@@ -503,6 +503,7 @@ button a{
     width: 1000px;
     margin: 0 auto;
     padding-top: 70px;
+    padding-bottom: 50px;
     flex-direction: column;
     
     
@@ -709,7 +710,7 @@ form{
     border: 1px solid transparent;
     padding: 6px 12px;
     font-size: 16px;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     margin-top: 20px;
     
 
@@ -736,14 +737,16 @@ form{
  }
 
  #search-container input:focus {
-    border-bottom-color: #6759ff;
+    border-bottom-color: #0d6efd;
+    
 
  }
  #search-container button {
     padding: 1em 2em;
     margin-left: 1em;
     border: none;
-    background-color: #6759ff;
+    
+    background-color: #0d6efd;
     color: #ffffff;
     border-radius: 5px;
     margin-top: 0.5em;
@@ -752,7 +755,7 @@ form{
  }
 
  .button-value{
-    border: 2px solid #6759ff;
+    border: 2px solid #0d6efd;
     padding: 1em 2.2em;
     border-radius: 0.25rem;
     background-color: transparent;
@@ -762,7 +765,7 @@ form{
  }
 
  .active{
-    background-color: #6759ff;
+    background-color: #0d6efd;
     color: #ffffff;
 
  }
