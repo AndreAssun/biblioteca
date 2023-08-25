@@ -1069,6 +1069,48 @@ footer{
 }
 
 
+/*Recursos*/
+
+.recursos{
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.div-text-recursos{
+    width: 50%;
+}
+
+.div-image-recursos{
+    width: 50%;
+}
+.div-text-recursos h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.div-text-recursos h2{
+    font-size: 16px;
+    color: #949494;
+    font-weight: 400;
+    
+
+}
+
+.div-image-recursos img{
+    width: 400px;
+}
+
+ #tablet{
+    width: 600px;
+}
+
+#celular{
+    width: 400px;
+}
+
+
 
 
 
