@@ -5,7 +5,7 @@
     }
 
     .section-one{
-        background-image: url(img/sessao-one-mobile.png);
+        background-image: url(/img/sessao-one-mobile.png);
         background-size: cover ;
         height: 500px;
         width: 100%;
@@ -254,7 +254,7 @@
 
   
   .footer-info{
-      padding-left: 0px;
+      padding-left: 0;
       
   }
 
@@ -670,6 +670,10 @@
 
 .coment p{
    font-size: 14px;
+}
+
+#logo{
+    width: 100%;
 }
 
 
