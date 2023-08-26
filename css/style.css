@@ -1031,16 +1031,29 @@ footer{
 
 /*Recursos*/
 
+.section-acervo-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(89, 89, 89);
+    background-image: url(/img/fundo-recursos.png);
+    background-size: cover ;
+    height: 290px;
+    
+    
+}
+
 .recursos{
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    width: 70%;
+    width: 75%;
     align-items: center;
     height: 350px;
     margin-top: 60px; 
     margin-bottom: 60px; 
     padding: 70px;
+    gap: 10%;
 }
 
 .recursos-color h1{
@@ -1049,9 +1062,12 @@ footer{
 
 .recursos-color h2{
     color: #fff;
+    
+    
 }
 .div-text-recursos{
-    width: 50%;
+    width: 45%;
+
 }
 
 .div-image-recursos{
@@ -1060,19 +1076,27 @@ footer{
 .div-text-recursos h1{
     font-size: 25px;
     font-weight: 500;
+    
+    
+    
 }
 .div-text-recursos h2{
+    margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
+    line-height: 25px;
+    
 }
 
 .recursos-color{
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,189,255,1) 0%, rgba(128,37,255,0) 100%, rgba(126,73,255,1) 100%, rgba(115,85,255,1) 100%, rgba(136,63,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,189,255,1) 0%, rgba(128,37,255,0) 100%, rgba(126,73,255,1) 100%, rgba(115,85,255,1) 100%, rgba(136,63,255,1) 100%);
+    border-radius: 20px;
 }
 
 .div-image-recursos img{
     width: 400px;
+    
 }
 
  #tablet{
