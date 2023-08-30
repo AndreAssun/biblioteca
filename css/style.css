@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
-@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+
 
 * {
 
@@ -1112,7 +1111,7 @@ footer{
 }
 
  #tablet{
-    width: 600px;
+    width: 500px;
 }
 
 #celular{
@@ -1299,19 +1298,22 @@ footer{
   .cursor:hover{
     color: blue;
   }
-    
-    
 
+  .avaliacao img{
+    height: 50px;
+  }
 
+  .foto-perfil img{
+    object-fit: cover;
+  }
 
+  .intro-coments{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  .intro-coments h1{
+    font-weight: 800;
+    color: #4a67df;;
+  }
