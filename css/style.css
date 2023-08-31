@@ -1211,6 +1211,7 @@ footer{
     margin: 0 auto;
     gap: 2%;
     justify-content: center;
+    padding-bottom: 100px;
     
     
 }
@@ -1305,15 +1306,17 @@ footer{
 
   .foto-perfil img{
     object-fit: cover;
+    margin-right: 10px;
   }
 
   .intro-coments{
     width: 80%;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 10px;
   }
 
   .intro-coments h1{
     font-weight: 800;
-    color: #4a67df;;
+    color: #4a67df;
+    padding-top: 100px;
   }
