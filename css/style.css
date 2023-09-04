@@ -40,6 +40,7 @@
 }
 header ul {
     display: flex;
+    align-items: center;
 
 }
 .menu-nav ul{
@@ -61,6 +62,10 @@ header ul li a:hover {
     color: #3c5bd8d2;
     transition: all .43s;
 
+}
+
+#burguer {
+    width: 55px;
 }
 
 /*SECTION-ONE*/
