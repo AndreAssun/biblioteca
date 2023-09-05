@@ -39,10 +39,10 @@
 
   <section class="recursos-section">
     <div class="recursos">
-        <div class="div-image-recursos">
+        <div class="div-image-recursos"  id="area-2">
             <img src="img/multiplataforma.png" alt="">
         </div>
-        <div class="div-text-recursos">
+        <div class="div-text-recursos" id="area-4">
             <h1>Multiplataforma</h1>
             <h2>
               Uma ferramenta multiplataforma que garante acessibilidade e usabilidade em diferentes dispositivos, como computadores, tablets e smartphones. Isso amplia seu alcance, atingindo uma audiência mais diversificada. 
@@ -51,21 +51,21 @@
     </div>
 
     <div class="recursos recursos-color">
-        <div class="div-text-recursos color-recursos">
+        <div class="div-text-recursos color-recursos" id="area-3">
             <h1>Sistema de busca avançada</h1>
             <h2>Possui um sistema de busca avançada oferece aos usuários uma pesquisa mais precisa e eficiente, direcionando-os rapidamente ao conteúdo desejado.
             </h2>
         </div>
-        <div class="div-image-recursos" >
+        <div class="div-image-recursos"  id="area-4">
             <img src="img/mockup-tablet.png" alt="" id="tablet">
         </div>
     </div>
 
     <div class="recursos">
-        <div class="div-image-recursos">
+        <div class="div-image-recursos" id="area-3">
             <img src="img/mockup-celular.png" alt="" id="celular">
         </div>
-        <div class="div-text-recursos">
+        <div class="div-text-recursos"  id="area-4">
             <h1>Aplicativo Web</h1>
             <h2>
               O aplicativo permite uma experiência personalizada, notificações diretas e acesso offline, aumentando o envolvimento. Assim você não perde o seu contéudo, mesmo que sem internet.
@@ -74,13 +74,13 @@
     </div>
 
     <div class="recursos recursos-color">
-        <div class="div-text-recursos ">
+        <div class="div-text-recursos " id="area-3">
             <h1>Interface intuitiva</h1>
             <h2>
               Uma interface intuitiva facilita a navegação e uso de um sistema, tornando-o mais acessível a todos os tipos de usuários, mesmo sem instruções detalhadas. 
             </h2>
         </div>
-        <div class="div-image-recursos" >
+        <div class="div-image-recursos"  id="area-4">
             <img src="img/notebook-mockup.png" alt="" id="tablet">
         </div>
     </div>
@@ -220,6 +220,47 @@
       </div>
 
     </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+
+      //animação scroll//
+      window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('#area-1', {
+  origin: 'top', 
+  duration: 1000, 
+  distance: '400px',
+  easing: 'ease-out', 
+});
+sr.reveal('#area-2', {
+  origin: 'left', 
+  duration: 600, 
+  distance: '300px',
+  easing: 'ease-out', 
+})
+sr.reveal('#area-3', {
+  origin: 'left', 
+  duration: 600, 
+  distance: '300px',
+  easing: 'ease-out', 
+})
+sr.reveal('#area-4', {
+  origin: 'right', 
+  duration: 600, 
+  distance: '300px',
+  easing: 'ease-out', 
+})
+sr.reveal('#area-5', {
+  origin: 'top', 
+  duration: 600, 
+  distance: '300px',
+  easing: 'ease-out', 
+})
+
+    </script>
+</body>
+
   
 
 </body>
