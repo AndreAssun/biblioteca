@@ -439,6 +439,11 @@
    background-color: blue;
 }
 
+.div-image-recursos h1 {
+   font-size: 18px;
+}
+
+
 
   
 }
@@ -714,22 +719,57 @@
 }
 /*quem somos*/
 @media screen and (max-width: 1330px){
-   #apontando-pc{
+   .apontando-pc{
       width: 400px;
    }
 
 }
 
-@media screen and (max-width: 1118px){
-   #apontando-pc{
+@media screen and (max-width: 1214px){
+   .apontando-pc{
       visibility: hidden;
+   }
+   
+   .quem-somos-section{
+      text-align: center;
    }
 
    .quem-somos {
       flex-direction: column;
       margin-top: 0px;
-      width: 90%;
+      margin-bottom: 0px;
+      width: 100%;
+      justify-content: center;
 
    }
 
+   .div-text-recursos {
+      width: 90%;
+      padding-left: 0%;
+
 }
+
+.div-image-recursos {
+   width: 90%;
+}
+
+.div-image-quem-somos {
+   display: none;
+}
+
+.div-text-recursos h2 {
+   margin-top: 5px;
+}
+
+.div-text-recursos h1 {
+   font-weight: 500;
+}
+
+.div-image-recursos h1{
+   font-size: 30px;
+}
+
+
+}
+
+
