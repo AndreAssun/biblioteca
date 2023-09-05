@@ -33,7 +33,7 @@
   
 
   <section class="section-one">
-    <div class="intro">
+    <div class="intro" id="area-2">
       <h2>Uma única assinatura oferece acesso a todos os eBooks que você precisa.</h2>
       <h3>Faça parte da Biblioteca Online para trabalhar, pesquisar e estudar </h3>
       <div class="button-side">
@@ -45,9 +45,9 @@
 
   <section class="section-somos">
 
-    <div class="div-card">
+    <div class="div-card" >
       <a href="#ajudar" class="card card01">
-        <div>
+        <div id="area-6">
             <img src="img/icons8-ideia-128.png" alt="icone-ideia">
             <h3>Incentive a leitura e a comunicação</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -55,7 +55,7 @@
       </a>
 
       <a href="#incentive" class="card card02">
-        <div>
+        <div id="area-6">
           <img src="img/icons8-livro-100.png" alt="icone-livro">
           <h3>Acervo com mais de 4.000 títulos</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -63,7 +63,7 @@
       </a>
 
       <a href="#instituicoes" class="card card03">
-        <div>
+        <div id="area-6">
           <img src="img/icons8-ensino-100.png" alt="icone-ensino">
           <h3>Usado por diversas instituições</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -74,13 +74,13 @@
   </section>
 
   <section class="section-ajudar" id="ajudar">
-    <h2>BibliotecaOnline.com</h2>
-    <h3>Como a Biblioteca online pode ajudar sua Instituição?</h3>
+    <h2 id="area-2">BibliotecaOnline.com</h2>
+    <h3 id="area-2">Como a Biblioteca online pode ajudar sua Instituição?</h3>
     <div class="div-conteudo">
       <div class="image-side">
         <img src="img/woman-using-digital-tablet-technology.jpg" alt="foto-mulher-lendo">
       </div>
-      <div class="icons-list">
+      <div class="icons-list" id="area-4">
         <div  class="icons-side">
           <svg xmlns="http://www.w3.org/2000/svg"  color="red" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
             <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
@@ -119,10 +119,10 @@
   
 
   <section class="section-incentive" id="incentive">
-    <h2>Acervo com mais de 4 mil livros</h2>
-    <h3>Como assinando a  Biblioteca online ajuda a incentivar a leitura?</h3>
+    <h2 id="area-2">Acervo com mais de 4 mil livros</h2>
+    <h3 id="area-2">Como assinando a  Biblioteca online ajuda a incentivar a leitura?</h3>
     <div class="div-conteudo-incentive">
-      <div class="incentive-text">
+      <div class="incentive-text"  id="area-2">
         <p>A <strong>Biblioteca Online</strong> de eBooks pode desempenhar um papel fundamental no <strong>incentivo à leitura</strong>, proporcionando acesso fácil e conveniente a uma ampla variedade de livros eletrônicos. Com a ascensão da tecnologia digital, as bibliotecas de eBooks tornaram-se plataformas populares para os amantes da leitura</p>
         
         <p>Com uma biblioteca de eBooks, os leitores podem carregar uma vasta coleção de livros em <strong>um único dispositivo</strong>, como um e-reader, tablet ou smartphone. Isso permite que levem seus livros para onde quer que vão, proporcionando <strong>mobilidade e conveniência</strong>.</p>
@@ -140,8 +140,8 @@
 
 
   <section class="section-instituicoes" id="instituicoes">
-    <h3>Somos uma plataforma usada por diversas instituições educacionais</h1>
-    <div class="instituicoes">
+    <h3 id="area-6">Somos uma plataforma usada por diversas instituições educacionais</h1>
+    <div class="instituicoes" id="area-6">
       <img src="img/instituicoes/1.png" alt="">
       <img src="img/instituicoes/Logo Azul e Laranja de Faculdade.png" alt="">
       <img src="img/instituicoes/Logo para Universidade Ensino Superior Minimalista.png" alt="">
@@ -310,6 +310,51 @@
 
   <script src="https://kit.fontawesome.com/696ebcb2fd.js" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+
+    //animação scroll//
+    window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('#area-1', {
+origin: 'top', 
+duration: 1000, 
+distance: '400px',
+easing: 'ease-out', 
+});
+sr.reveal('#area-2', {
+origin: 'left', 
+duration: 600, 
+distance: '300px',
+easing: 'ease-out', 
+})
+sr.reveal('#area-3', {
+origin: 'left', 
+duration: 600, 
+distance: '300px',
+easing: 'ease-out', 
+})
+sr.reveal('#area-4', {
+origin: 'right', 
+duration: 600, 
+distance: '300px',
+easing: 'ease-out', 
+})
+sr.reveal('#area-5', {
+origin: 'top', 
+duration: 600, 
+distance: '300px',
+easing: 'ease-out', 
+})
+sr.reveal('#area-6', {
+origin: 'bottom', 
+duration: 800, 
+distance: '300px',
+easing: 'ease-out', 
+})
+
+  </script>
 
     
 
