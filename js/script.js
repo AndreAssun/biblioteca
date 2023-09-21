@@ -271,9 +271,9 @@ function filterProduct(value) {
     buttons.forEach((button) => {
         // Verifica se o valor é igual ao texto do botão (ignorando maiúsculas e minúsculas)
         if (value.toUpperCase() === button.innerText.toUpperCase()) {
-            button.classList.add("active");
+            button.classList.add("active-acervo");
         } else {
-            button.classList.remove("active");
+            button.classList.remove("active-acervo");
         }
     });
 
@@ -360,3 +360,4 @@ document.getElementById("search").addEventListener("click", () => {
 window.onload = () => {
     filterProduct("todos");
 };
+

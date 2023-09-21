@@ -1,8 +1,91 @@
+/*menu hamburguer*/
+@media (max-width: 850px) {
+   #btn-mobile {
+      display: block;
+   }
+
+   #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top:70px;
+      right: 0px;
+      background-color:rgb(255, 255, 255);
+      height: 0px;
+      transition: .6s;
+      z-index: 1000;
+      visibility: hidden;
+      overflow-y: hidden;
+      
+   }
+
+   #nav.active #menu{
+      height: 100vh;
+      visibility: visible;
+      overflow-y: auto;
+      
+      
+   }
+   header ul li {
+      margin-left: 20px;
+      font-weight: 500;
+      margin-top: 30px;
+      width: 90%;
+      border-bottom: 2px solid rgba(0, 0, 0, .05) ;
+  }
+
+  #btn-mobile{
+   display: flex;
+   align-items: center;
+   padding:  .5rem 1rem;
+   font-size: 1rem;
+   border: none;
+   background-color:transparent;
+   cursor: pointer;
+   gap: .5rem;
+  }
+
+  #hamburguer {
+   border-top: 2px solid;
+   width: 20px;
+  }
+
+  #hamburguer::after, #hamburguer::before{
+   content: '';
+   display: block;
+   width: 20px;
+   height: 2px;
+   background-color: currentColor;
+   margin-top: 5px;
+   transition: .3s;
+   position: relative;
+   
+   
+  }
+
+  #nav.active #hamburguer {
+   border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before{
+   transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after{
+   transform: rotate(-135deg);
+   top: -7px;
+  }
+
+   
+
+}
+
+
+
+
 @media screen and (max-width: 1050px){
 
-    .menu-nav{
-        display: none;
-    }
+  
 
     .section-one{
         background-image: url(/img/sessao-one-mobile.png);
@@ -358,7 +441,24 @@
    margin: 15px 15px 0px 15px;
    
 }
+
+/*coments*/
+
+.section-coments {
+   padding: 10px 0px 70px 0px;
+   display: flex;
+   flex-direction: column;
+
+
+
+  
 }
+
+.container{
+   padding-top: 30px;
+}
+}
+
 
 @media screen and (max-width: 690px){
    .footer-geral {
@@ -443,9 +543,6 @@
    font-size: 18px;
 }
 
-
-
-  
 }
     
      
@@ -515,8 +612,12 @@
      .div-text-recursos{
       width: 100%;
      }
+
+     .cards-somos {
+      grid-template-columns: auto auto auto;
       
   }
+}
   
 
 
@@ -768,6 +869,68 @@
 .div-image-recursos h1{
    font-size: 30px;
 }
+
+
+}
+
+@media screen and (max-width: 730px){
+
+.cards-somos {
+   grid-template-columns: auto auto;
+   
+}
+.intro-cards-somos p {
+   width: 90%;
+  }
+
+  .div-text-recursos h1 {
+   font-size: 20px;
+
+}
+.div-image-recursos h1 {
+   font-size: 20px;
+}
+}
+
+@media screen and (max-width: 530px){
+
+   .quem-somos{
+      height: 100%;
+   }
+
+   .cards-somos {
+    grid-template-columns:  auto;
+    box-sizing: border-box;
+    width: 100%;
+    background: none;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    font-weight: bolder;
+    flex-direction: column;
+    color: white;
+    padding: 30px 5px 0px 5px;
+    margin-bottom: 10px;
+      
+   }
+
+   .intro-coments h1 {
+      padding-top: 10px;
+      text-align:center;
+
+   }
+
+  
+
+ 
+
 
 
 }

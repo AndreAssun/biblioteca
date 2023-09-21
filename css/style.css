@@ -12,7 +12,14 @@
     list-style: none;
 }
 
+
 /*HEADER*/
+
+#btn-mobile {
+    display: none;
+}
+
+
 
 .header {
     width: 100%;
@@ -731,7 +738,7 @@ form{
     margin-right: 6px;
  }
 
- .active{
+ .active-acervo{
     background-color: #0d6efd;
     color: #ffffff;
 
@@ -1366,6 +1373,11 @@ footer{
 
  .apontando-pc{
     width: 500px;
+ }
+
+ .active{
+    background-color: #ffffff !important;
+   
  }
 
  /*animação texto*/
