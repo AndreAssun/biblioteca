@@ -88,8 +88,8 @@
   
 
     .section-one{
-        background-image: url(/img/sessao-one-mobile.png);
-        background-size: cover ;
+        background-image: linear-gradient(to bottom, transparent 0%, #565656a4 50%), url(/img/jovem-bonito-usando-tablet-digital-ou-e-book.jpg);
+        background-size: contain no-repeat ;
         height: 500px;
         width: 100%;
         text-align: center;
@@ -214,7 +214,7 @@
         margin-top: 120px;
         width: 100%;
         margin: 0 auto;
-        padding-top: 100px;
+        padding-top: 50px;
         
      }
      .section-incentive h2{
@@ -227,10 +227,11 @@
      .section-incentive h3{
         color:#1a1a1aad;
         font-size: 40px;
-        line-height: 42px;
+        line-height: 30px;
         padding-top: 20px;
         text-align: center;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         
         
      }
@@ -401,14 +402,16 @@
   }
   
   .footer-section-03{
+      text-align: center;
       align-items: center;
       display: flex;
       justify-content: space-around;
       color: white;
-      width: 77%;
+      width: 100%;
       margin: 0 auto;
       padding-top: 50px;
       flex-direction: column;
+      
       
   
   }
@@ -633,7 +636,7 @@
     }
 
     .intro h2{
-        width: 100%;
+        width: 95%;
         font-size: 28px;
         line-height: 30px;
     }
